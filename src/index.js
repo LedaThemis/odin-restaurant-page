@@ -1,3 +1,5 @@
+import { mainDiv } from './home';
+
 import './styles.css';
 
 import soupIcon from './soup.png';
@@ -36,3 +38,5 @@ headerElement.appendChild(logoElement);
 headerElement.appendChild(navElement);
 
 contentDiv.appendChild(headerElement);
+
+contentDiv.appendChild(mainDiv);

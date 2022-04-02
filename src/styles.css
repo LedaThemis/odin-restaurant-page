@@ -1,9 +1,22 @@
-root {
+html {
   font-family: Poppins, sans-serif;
 }
 
 body {
   margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer {
+  text-align: center;
+}
+
+#content {
+  text-align: center;
 }
 
 #header {

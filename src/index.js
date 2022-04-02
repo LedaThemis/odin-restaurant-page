@@ -1,4 +1,5 @@
 import { mainDiv } from './home';
+import { recipesDiv } from './recipes';
 
 import './styles.css';
 
@@ -39,4 +40,5 @@ headerElement.appendChild(navElement);
 
 contentDiv.appendChild(headerElement);
 
-contentDiv.appendChild(mainDiv);
+// contentDiv.appendChild(mainDiv);
+contentDiv.appendChild(recipesDiv);

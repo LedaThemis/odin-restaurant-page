@@ -1,4 +1,4 @@
-import { mainDiv } from './home';
+import { homeDiv } from './home';
 import { recipesDiv } from './recipes';
 import { contactDiv } from './contact';
 
@@ -44,9 +44,9 @@ headerElement.appendChild(navElement);
 contentDiv.appendChild(headerElement);
 contentDiv.appendChild(tabContentDiv);
 // load home page content by default
-tabContentDiv.appendChild(mainDiv);
+tabContentDiv.appendChild(homeDiv);
 
-homeButton.addEventListener('click', (e) => handleTabChange(e, mainDiv));
+homeButton.addEventListener('click', (e) => handleTabChange(e, homeDiv));
 recipesButton.addEventListener('click', (e) => handleTabChange(e, recipesDiv));
 contactButton.addEventListener('click', (e) => handleTabChange(e, contactDiv));
 

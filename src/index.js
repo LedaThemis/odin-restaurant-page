@@ -32,6 +32,8 @@ contactButton.id = 'contact-button';
 contactButton.classList.add('nav-button');
 contactButton.textContent = 'CONTACT';
 
+const tabContentDiv = document.createElement('div');
+
 navElement.appendChild(homeButton);
 navElement.appendChild(recipesButton);
 navElement.appendChild(contactButton);
@@ -40,7 +42,14 @@ headerElement.appendChild(logoElement);
 headerElement.appendChild(navElement);
 
 contentDiv.appendChild(headerElement);
+contentDiv.appendChild(tabContentDiv);
+// load home page content by default
+tabContentDiv.appendChild(mainDiv);
 
-// contentDiv.appendChild(mainDiv);
-// contentDiv.appendChild(recipesDiv);
-contentDiv.appendChild(contactDiv);
+homeButton.addEventListener('click', (e) => handleTabChange(e, mainDiv));
+recipesButton.addEventListener('click', (e) => handleTabChange(e, recipesDiv));
+contactButton.addEventListener('click', (e) => handleTabChange(e, contactDiv));
+
+const handleTabChange = (e, newContent) => {
+  tabContentDiv.replaceChildren(newContent);
+};

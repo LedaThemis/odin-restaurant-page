@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactDiv\": () => (/* binding */ contactDiv)\n/* harmony export */ });\nconst contactDiv = document.createElement('div');\n\nconst h1 = document.createElement('h1');\nh1.textContent = 'You can contact us at: restaurant@fakeOdin.com';\n\ncontactDiv.appendChild(h1);\n\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _recipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./recipes */ \"./src/recipes.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _soup_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./soup.png */ \"./src/soup.png\");\n\n\n\n\n\n\n\nconst contentDiv = document.querySelector('#content');\n\nconst headerElement = document.createElement('header');\nheaderElement.id = 'header';\n\nconst logoElement = document.createElement('img');\nlogoElement.id = 'site-logo';\nlogoElement.src = _soup_png__WEBPACK_IMPORTED_MODULE_3__;\nlogoElement.alt = 'restaurant logo, soup';\n\nconst navElement = document.createElement('nav');\nnavElement.id = 'nav';\n\nconst homeButton = document.createElement('button');\nhomeButton.id = 'home-button';\nhomeButton.classList.add('nav-button');\nhomeButton.textContent = 'HOME';\nconst recipesButton = document.createElement('button');\nrecipesButton.id = 'recipes-button';\nrecipesButton.classList.add('nav-button');\nrecipesButton.textContent = 'RECIPES';\nconst contactButton = document.createElement('button');\ncontactButton.id = 'contact-button';\ncontactButton.classList.add('nav-button');\ncontactButton.textContent = 'CONTACT';\n\nnavElement.appendChild(homeButton);\nnavElement.appendChild(recipesButton);\nnavElement.appendChild(contactButton);\n\nheaderElement.appendChild(logoElement);\nheaderElement.appendChild(navElement);\n\ncontentDiv.appendChild(headerElement);\n\n// contentDiv.appendChild(mainDiv);\ncontentDiv.appendChild(_recipes__WEBPACK_IMPORTED_MODULE_1__.recipesDiv);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _recipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./recipes */ \"./src/recipes.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _soup_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./soup.png */ \"./src/soup.png\");\n\n\n\n\n\n\n\n\nconst contentDiv = document.querySelector('#content');\n\nconst headerElement = document.createElement('header');\nheaderElement.id = 'header';\n\nconst logoElement = document.createElement('img');\nlogoElement.id = 'site-logo';\nlogoElement.src = _soup_png__WEBPACK_IMPORTED_MODULE_4__;\nlogoElement.alt = 'restaurant logo, soup';\n\nconst navElement = document.createElement('nav');\nnavElement.id = 'nav';\n\nconst homeButton = document.createElement('button');\nhomeButton.id = 'home-button';\nhomeButton.classList.add('nav-button');\nhomeButton.textContent = 'HOME';\nconst recipesButton = document.createElement('button');\nrecipesButton.id = 'recipes-button';\nrecipesButton.classList.add('nav-button');\nrecipesButton.textContent = 'RECIPES';\nconst contactButton = document.createElement('button');\ncontactButton.id = 'contact-button';\ncontactButton.classList.add('nav-button');\ncontactButton.textContent = 'CONTACT';\n\nnavElement.appendChild(homeButton);\nnavElement.appendChild(recipesButton);\nnavElement.appendChild(contactButton);\n\nheaderElement.appendChild(logoElement);\nheaderElement.appendChild(navElement);\n\ncontentDiv.appendChild(headerElement);\n\n// contentDiv.appendChild(mainDiv);\n// contentDiv.appendChild(recipesDiv);\ncontentDiv.appendChild(_contact__WEBPACK_IMPORTED_MODULE_2__.contactDiv);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
 
 /***/ }),
 
